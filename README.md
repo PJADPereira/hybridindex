@@ -7,7 +7,7 @@ The sync file can be produced by creating a mpileup file from a series of genome
 
 &nbsp;
 
-A sync file has the following organization **(without the header)**:
+A sync file has the following organization **(tab-delimited text file - without the header)**:
 
 &nbsp;
 
@@ -24,7 +24,7 @@ A sync file has the following organization **(without the header)**:
 
 &nbsp;
 
-The marker file must have the following format **(without the header)**:
+The marker file must have the following format **(tab-delimited text file - without the header)**:
 
 &nbsp;
 
