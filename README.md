@@ -1,10 +1,15 @@
 # Hybrid Index
 A method to determine the contribution of two genetic sources of one individual by random sampling alleles, based on a panel of diagnostic markers. The main input files are: (1) a PoPoolation sync file; (2) a marker file. 
 
+&nbsp;
 
 The sync file can be produced by creating a mpileup file from a series of genome alignments with [SAMtools](https://www.htslib.org); the mpileup can then be converted to sync using [PoPoolation2](https://sourceforge.net/p/popoolation2).
 
+&nbsp;
+
 A sync file has the following organization **(without the header)**:
+
+&nbsp;
 
 |chrm|pos|ref|sample1|...|...|...|sampleN|
 |----|---|---|-------|---|----|---|----|
@@ -17,8 +22,12 @@ A sync file has the following organization **(without the header)**:
 |1  |181011897|	N	|0:0:0:0:0:0	|0:0:0:0:0:0	|1:0:0:0:0:0	|1:0:0:0:0:0	|2:0:0:0:0:0|
 |1  |190696618|	N	|1:0:0:0:0:0	|0:0:0:0:0:0	|0:0:0:0:0:0	|0:0:0:1:0:0	|0:0:0:0:0:0|
 
+&nbsp;
 
 The marker file must have the following format **(without the header)**:
+
+&nbsp;
+
 |chrm|pos|ref|alt|allelefreqA|allelefreqB|
 |-|-|-|-|-|-|
 |1| 108645303|	G|	A|	0.000004|	0.999997|
@@ -30,9 +39,11 @@ The marker file must have the following format **(without the header)**:
 |1|	181011897|	A|	T|	0.033485|	0.953533|
 |1|	190696618|	G|	A|	0.970488|	0.039636|
 
+&nbsp;
 
 The first two columns of the marker file have the coordinates of the diagnostic marker. Columns 3 and 4 show the reference and the alternative alleles. Columns 5 and 6 show the allele frequency of the diagnostic position in reference populations A and B. In this example, allele frequencies for in each position were calculated on low-coverage whole-genome data using [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD).
 
+&nbsp;
 
 
 
