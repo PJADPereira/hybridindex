@@ -1,5 +1,5 @@
 # Hybrid Index
-A method to determine the contribution of two genetic sources of one individual by random sampling SNPs
+A method to determine the contribution of two genetic sources of one individual by random sampling reads per SNP
 
 To use download the hybridindex.py file or clone the repository 
 
